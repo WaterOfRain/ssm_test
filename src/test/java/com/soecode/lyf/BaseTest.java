@@ -1,5 +1,6 @@
 package com.soecode.lyf;
 
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
@@ -11,5 +12,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 // 告诉junit spring配置文件
 @ContextConfiguration({ "classpath:spring/spring-dao.xml", "classpath:spring/spring-service.xml" })
 public class BaseTest {
-
+	@Test
+	public void test(){
+		System.out.println("test");
+	}
 }
